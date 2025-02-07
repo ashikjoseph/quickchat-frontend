@@ -20,7 +20,7 @@ function DoubHome() {
           {/* Home Icon */}
           <div className="text-center">
             <Link to={'/'}>
-              <i className="fa-solid fa-house-chimney-user fa-4x text-gradient-to-r from-purple-600 via-pink-600 to-indigo-600 hover:text-white transition-all"></i>
+              <i className="fa-solid fa-comments fa-5x text-indigo-600 hover:text-indigo-400 transition-all duration-300 transform hover:scale-110"></i>
             </Link>
           </div>
 

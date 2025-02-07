@@ -7,7 +7,6 @@ import { addCnversationsContext } from '../context/AuthContext';
 import { useConversationContext } from '../context/ConversationContext';
 import { useSocketContext } from '../context/Socket';
 
-
 function ChatCon({ searchInput }) {
   const [contacts, setContacts] = useState([]);
   const [selectedUserId, setSelectedUserId] = useState(null);
@@ -65,7 +64,7 @@ function ChatCon({ searchInput }) {
       <ul className="space-y-3">
         {sortedContacts.length > 0 ? (
           sortedContacts.map((item, index) => (
-            <li key={item._id} className="flex justify-between items-center">
+            <li key={item._id} className="flex justify-between items-center sm:flex-col md:flex-row">
               <Link
                 to={`/conversation/${item._id}`}
                 className={`flex items-center space-x-4 p-4 rounded-lg transition-all duration-300 ease-in-out ${

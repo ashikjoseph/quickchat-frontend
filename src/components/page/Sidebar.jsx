@@ -30,7 +30,7 @@ function Sidebar() {
   };
 
   return (
-    <div className="w-64 min-h-screen bg-gray-800 p-6 flex flex-col shadow-lg rounded-xl">
+    <div className="w-full sm:w-64 min-h-screen bg-gray-800 p-6 flex flex-col shadow-lg rounded-xl">
       {/* Profile Section */}
       <div className="flex items-center space-x-4 mb-8">
         <img
@@ -63,15 +63,14 @@ function Sidebar() {
         <ChatCon searchInput={searchInput} />
       </div>
 
-
+      {/* Logout Button */}
       <div className="mt-auto">
         <button
           onClick={handleLogout}
-          className="w-75 p-2 text-base font-semibold mt-4 bg-red-600 text-white rounded-lg shadow-md hover:bg-red-700 hover:shadow-lg transition-all duration-300 ease-in-out transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-red-500"
+          className="w-full sm:w-75 p-2 text-base font-semibold mt-4 bg-red-600 text-white rounded-lg shadow-md hover:bg-red-700 hover:shadow-lg transition-all duration-300 ease-in-out transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-red-500"
         >
           Logout
         </button>
-
       </div>
     </div>
   );

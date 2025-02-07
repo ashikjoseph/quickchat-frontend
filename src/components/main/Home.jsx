@@ -23,12 +23,12 @@ function Home() {
 
       {/* Main Content */}
       <main className="py-16 px-6 md:px-16 lg:px-32 text-center">
-        <div className="flex items-center justify-center space-x-12 mb-16 bg-white p-8 rounded-lg shadow-xl max-w-6xl mx-auto transition duration-300 transform hover:scale-105">
+        <div className="flex flex-col md:flex-row items-center justify-center md:space-x-12 space-y-8 md:space-y-0 mb-16 bg-white p-8 rounded-lg shadow-xl max-w-6xl mx-auto transition duration-300 transform hover:scale-105">
           {/* Image on the left */}
           <img
             src={authImage}
             alt="QuickChat Signup"
-            className="w-80 h-80 md:w-96 md:h-96 rounded-lg shadow-lg transition duration-300 transform hover:scale-105"
+            className="w-full max-w-xs md:max-w-md rounded-lg shadow-lg transition duration-300 transform hover:scale-105"
           />
           {/* Text content on the right */}
           <div className="text-left">
@@ -58,7 +58,7 @@ function Home() {
         {/* Features Section */}
         <section className="my-16">
           <h2 className="text-4xl font-bold text-gray-800 mb-12">Why Choose QuickChat?</h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
             <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300">
               <h3 className="text-2xl font-semibold mb-4">Instant Messaging</h3>
               <p className="text-gray-600">
@@ -98,11 +98,10 @@ function Home() {
             </div>
           </div>
         </section>
-
       </main>
 
       {/* Footer */}
-      <footer className="bg-gray-800 text-white text-center py-12 shadow-inner">
+      <footer className="bg-gray-800 text-white text-center py-12 shadow-inner px-6">
         <p className="text-gray-100 text-sm hover:text-blue-500 transition duration-300">
           &copy; 2024 QuickChat. All rights reserved. Let's chat and have fun!
         </p>

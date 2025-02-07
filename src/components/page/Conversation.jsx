@@ -153,8 +153,8 @@ function Conversation() {
       <div>
         <Header />
       </div>
-      <div className='flex'>
-        <div className='w-1/5 bg-gray-800 p-4'>
+      <div className='flex flex-col md:flex-row'>
+        <div className='w-full md:w-1/5 bg-gray-800 p-4'>
           <Sidebar />
         </div>
         <div className='flex-1 bg-white p-6'>
